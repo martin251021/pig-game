@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+    .name {
+        font-size:2rem;
+    }
+
+    .score {
+        font-size:4rem;
+    }
+
+    .current-label {
+        font-size:1rem;
+    }
+
+    .current-score {
+        font-size:2rem;
+    }
+
+    .btn {
+        font-size:1.5rem;
+    }
+}
