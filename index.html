@@ -9,32 +9,50 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   	crossorigin="anonymous"></script>
-    <title>Pig Game</title>
+    <title>Kocky </title>
   </head>
   <body>
     <main>
+
+      
+
       <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Player 1</h2>
+        <h2 class="name" id="name--0">Hráč #1</h2>
         <p class="score" id="score--0">43</p>
         <div class="current">
-          <p class="current-label">Current</p>
+          <p class="current-label">Súčasne</p>
           <p class="current-score" id="current--0">0</p>
         </div>
       </section>
       <section class="player player--1">
-        <h2 class="name" id="name--1">Player 2</h2>
+        <h2 class="name" id="name--1">Hráč #2</h2>
         <p class="score" id="score--1">24</p>
         <div class="current">
-          <p class="current-label">Current</p>
+          <p class="current-label">Súčasne</p>
           <p class="current-score" id="current--1">0</p>
         </div>
       </section>
 
       <img src="dice-5.png" alt="Playing dice" class="dice" />
-      <button class="btn btn--new">🔄 New game</button>
-      <button class="btn btn--roll">🎲 Roll dice</button>
-      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--new">🔄 nová hra</button>
+      <button class="btn btn--roll">🎲 Hoď kockou</button>
+      <button class="btn btn--hold">📥 Zmena</button>
+      <button class="btn btn--rules">🚀 Pravidlá</button>
     </main>
+
+    <div class="modal hidden2">
+        <button class="close-modal">&times;</button>
+        <h1>Pravidlá hry </h1>
+        <p>
+          Hráči postupne hádžu kockami stlačením tlačítka "Hod". Po každom hode sa im do aktuálneho skóre
+          pričíta hodnota hodu. Pri zmene hráča stlačením tlačítka "Zmena hráča" sa momentálnemu hráčovi pričíta
+          súčet aktuálneho skóre do celkového skóre a pokračuje jeho protivník. POZOR! Ak však na kocke padne 1,
+          dochádza k vynulovaniu súčasného skóre. Vyhráva hráč, ktorý dosiahne celkové skóre 100. Veľa šťastia!
+        </p>
+      </div>
+      <div class="overlay hidden2"></div>
+    
     <script src="script.js"></script>
   </body>
 </html>
+
